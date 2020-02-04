@@ -1,1 +1,1 @@
-# yitingyin7.github.io
+# yitingyin.github.io
