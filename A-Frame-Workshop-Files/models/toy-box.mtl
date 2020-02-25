@@ -1,0 +1,52 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Deckel_Seite
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Spielzeugbox_Deckel_Seite.jpg
+map_d Spielzeugbox_Deckel_Seite.jpg
+
+newmtl Deckel_Top
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Spielzeugbox_Deckel_Top.jpg
+
+newmtl Seite_Blau
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Spielzeugbox_Seite_blau.jpg
+
+newmtl Seite_Rosa
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Spielzeugbox_Seite_rosa.jpg
+
+newmtl b0b0b0
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.690196 0.690196 0.690196
+Ks 0.009961 0.009961 0.009961
+Ni 1.000000
+d 1.000000
+illum 2

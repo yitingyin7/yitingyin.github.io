@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- main a-frame library -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+
+    <!-- physics library -->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!-- particle system library -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- environment library -->
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+    <!-- text geometry library -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+    <!-- extras library -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene physics>
+      <a-assets>
+          <img id="skyTexture" src="images/starmap.jpg">
+          <video id='kittybox' autoplay loop='true' src="video/kittybox.mp4"></video>
+          <video id='monster' autoplay loop='true' src="video/monster.mp4"></video>
+          <video id='pug' autoplay loop='true' src="video/pug.mp4"></video>
+          <video id='eye' autoplay loop='true' src="video/eye.mp4"></video>
+          <video id='boxinbox' autoplay loop='true' src="video/boxinbox.mp4"></video>
+          <video id='pandora' autoplay loop='true' src="video/pandora.mp4"></video>
+          <video id='pandora2' autoplay loop='true' src="video/pandora2.mp4"></video>
+          <video id='pandora3' autoplay loop='true' src="video/pandora3.mp4"></video>
+          <video id='cake0' autoplay loop='true' src="video/cake0.mp4"></video>
+          <video id='cake' autoplay loop='true' src="video/cake.mp4"></video>
+          <video id='cake2' autoplay loop='true' src="video/cake2.mp4"></video>
+          <video id='cake3' autoplay loop='true' src="video/cake3.mp4"></video>
+          <a-asset-item id="fox_obj" src="models/fox.obj"></a-asset-item>
+          <a-asset-item id="fox-mtl" src="models/fox.mtl"></a-asset-item>
+          <a-asset-item id="toy-box_obj" src="models/toy-box.obj"></a-asset-item>
+          <a-asset-item id="toy-box-mtl" src="models/toy-box.mtl"></a-asset-item>
+          <a-asset-item id="boxus_obj" src="models/boxus.obj"></a-asset-item>
+          <a-asset-item id="boxus-mtl" src="models/boxus.mtl"></a-asset-item>
+          <a-asset-item id="skull_obj" src="models/skull.obj"></a-asset-item>
+          <a-asset-item id="skull-mtl" src="models/skull.mtl"></a-asset-item>
+          <a-asset-item id="skull_obj" src="models/mammoth.obj"></a-asset-item>
+          <a-asset-item id="skull-mtl" src="models/mammoth.mtl"></a-asset-item>
+          <a-asset-item id="cat_obj" src="models/cat.obj"></a-asset-item>
+          <a-asset-item id="cat-mtl" src="models/cat.mtl"></a-asset-item>
+          <a-asset-item id="bottle_obj" src="models/bottle1.obj"></a-asset-item>
+          <a-asset-item id="bottle-mtl" src="models/bottle1.mtl"></a-asset-item>
+          <a-asset-item id="metal_obj" src="models/metal.obj"></a-asset-item>
+          <a-asset-item id="metal-mtl" src="models/metal.mtl"></a-asset-item>
+          <a-asset-item id="rose_obj" src="models/Rose.obj"></a-asset-item>
+          <a-asset-item id="rose-mtl" src="models/Rose.mtl"></a-asset-item>
+        </a-assets>
+        <a-entity position="0 2.25 -15" particle-system="preset: snow; size: 5"></a-entity>
+        <a-entity obj-model="obj: models/fox.obj; mtl: models/fox.mtl" position="0.125 1.5 -2" rotation=""
+        scale="0.001 0.001 0.001"></a-entity>
+        <a-entity obj-model="obj: models/toy-box.obj; mtl: models/toy-box.mtl" position="0 1.4 -1.5" rotation=""
+        scale="4 4 4"></a-entity>
+        <a-entity obj-model="obj: models/boxus.obj; mtl: models/boxus.mtl" position="0 0.4 -1.5" rotation=""
+        scale="0.2 0.2 0.2"></a-entity>
+        <a-entity obj-model="obj: models/rabit.obj; mtl: models/rabit.mtl" position="0 0.4 -1.5" rotation=""></a-entity>
+        <!-- sky texture -->
+        <a-sky color="#FBBEC8"></a-sky>
+        <a-entity text-geometry="value: Welcome to the" position="-6.4 14.5 -2.5" scale="3 3 3"></a-entity>
+        <a-entity text-geometry="value: Pandora's Box" position="-5.4 12.5 -2.5" scale="3 3 3"></a-entity>
+        <a-entity obj-model="obj: models/toy-box.obj; mtl: models/toy-box.mtl" position="0 1.6 -1.65" rotation=""
+        scale="0.05 0.05 0.05"></a-entity>
+        <a-entity obj-model="obj: models/skull.obj; mtl: models/skull.mtl" position="0.22 1.6 -1.73" rotation=""
+        scale="0.005 0.005 0.005" animation="property: rotation; to: 0 360 0; dur: 15000; easing: linear; loop: true;"></a-entity>
+        <a-entity obj-model="obj: models/mammoth.obj; mtl: models/mammoth.mtl" position="0 1.4 -1.5" rotation=""
+        scale="0.001 0.001 0.001"></a-entity>
+        <a-entity obj-model="obj: models/boxus.obj; mtl: models/boxus.mtl" position="0.125 1.5 -2" rotation=""
+        scale="0.0008 0.0008 0.0008"></a-entity>
+        <a-entity obj-model="obj: models/toy-box.obj; mtl: models/toy-box.mtl" position="0.25 1.6 -1.65" rotation=""
+        scale="0.05 0.05 0.05"></a-entity>
+        <a-entity obj-model="obj: models/cat.obj; mtl: models/cat.mtl" position="-0.16 1.55 -1.79" rotation="0 -90 0"
+        scale="0.04 0.04 0.04" animation="property: position; to: 0.192 1.55 -1.79; dur: 15000; easing: linear; loop: true;"></a-entity>
+        <a-entity obj-model="obj: models/bottle1.obj; mtl: models/bottle1.mtl" position="0.25 1.6 -1.73" rotation=""
+        scale="0.0025 0.0025 0.0025" animation="property: rotation; to: 360 360 0; dur: 15000; easing: linear; loop: true;"></a-entity>
+        <a-entity obj-model="obj: models/metal.obj; mtl: models/metal.mtl" position="0.2 1.5 -3" rotation="0 90 0"
+        scale="0.08 0.08 0.08"></a-entity>
+        <a-entity obj-model="obj: models/Rose.obj; mtl: models/Rose.mtl" position="0.123 1.6 -2" rotation="0 0 90"
+        scale="0.0006 0.0006 0.0006"></a-entity>
+        <a-video src = "#kittybox" width = "0.3" height ="0.3" position="0.2 1.65 -2.63"></a-video>
+        <a-video src = "#monster" width = "0.3" height ="0.3" position="0.045 1.65 -2.50" rotation="0 90 0"></a-video>
+        <a-video src = "#pug" width = "0.3" height ="0.3" position="0.36 1.65 -2.50" rotation="0 -90 0"></a-video>
+        <a-video src = "#eye" width = "0.3" height ="0.3" position="0.2 1.65 -2.40" rotation="0 180 0"></a-video>
+        <a-video src = "#cake0" width = "0.3" height ="0.3" position="0.2 1.65 -2.97"></a-video>
+        <a-video src = "#cake2" width = "0.3" height ="0.3" position="0.045 1.65 -2.85" rotation="0 90 0"></a-video>
+        <a-video src = "#cake3" width = "0.3" height ="0.3" position="0.36 1.65 -2.85" rotation="0 -90 0"></a-video>
+        <a-video src = "#cake" width = "0.3" height ="0.3" position="0.2 1.65 -2.70" rotation="0 180 0"></a-video>
+        <a-video src = "#boxinbox" width = "0.3" height ="0.3" position="0.2 1.65 -3.33"></a-video>
+        <a-video src = "#pandora" width = "0.3" height ="0.3" position="0.045 1.65 -3.18" rotation="0 90 0"></a-video>
+        <a-video src = "#pandora2" width = "0.3" height ="0.3" position="0.36 1.65 -3.18" rotation="0 -90 0"></a-video>
+        <a-video src = "#pandora3" width = "0.3" height ="0.3" position="0.2 1.65 -3.05" rotation="0 -180 0"></a-video>
+        <a-entity text-geometry="value: Welcome to the" position="-0.15 1.75 -1.7" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity text-geometry="value: Pandora's Box" position="-0.15 1.7 -1.7" scale="0.1 0.1 0.1"></a-entity>
+    </a-scene>
+  </body>
+</html>
