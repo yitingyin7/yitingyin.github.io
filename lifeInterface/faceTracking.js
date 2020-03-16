@@ -125,7 +125,7 @@ function verification(){
     verifyText = createP("By verifying your facial identity you are indicating that you have read and agree to these");
     verifyText.style("color", "#FFFFFF");
     verifyText.position(300, 470);
-    verifyText2 = createP("terms and our private policy")
+    verifyText2 = createP("terms and our privacy policy")
     verifyText2.style("color", "#4DAEFF")
     verifyText2.position(872, 470);
     verifyText2.mousePressed(policy);
